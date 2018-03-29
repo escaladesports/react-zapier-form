@@ -30,7 +30,6 @@
   },
   "dependencies": {
     "fetch-retry": "^1.2.1",
-    "formdata-polyfill": "^3.0.9",
     "jquery": "^3.3.1",
     "styled-jsx": "^2.2.4"
   }

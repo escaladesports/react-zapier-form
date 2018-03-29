@@ -1,6 +1,5 @@
 import React from 'react'
 import fetch from 'fetch-retry'
-import FormData from 'formdata-polyfill'
 
 import noop from './noop'
 

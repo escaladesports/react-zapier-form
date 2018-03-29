@@ -17,7 +17,7 @@ class ZapierForm extends React.Component {
 	}
 	async onSubmit(e) {
 		e.preventDefault()
-		if (!this.props.canSubmit) return
+		if (!this.props.canSubmit || this.honeypot.value) return
 
 		this.setState({
 			loading: true,
@@ -74,7 +74,14 @@ class ZapierForm extends React.Component {
 				ref={form => this.form = form}
 				onSubmit={this.onSubmit}
 				{...this.formProps}
-			>
+				>
+				<div style={{ display: 'none' }}>
+					<input
+						type='text'
+						name={this.props.honeyPotName}
+						ref={honeypot => this.honeypot = honeypot}
+						/>
+				</div>
 				{this.props.children(this.state)}
 			</form>
 		)
@@ -84,6 +91,7 @@ class ZapierForm extends React.Component {
 ZapierForm.defaultProps = {
 	name: 'Form',
 	canSubmit: true,
+	honeyPotName: 'p_number',
 	onSubmit: noop,
 	onSuccess: noop,
 	onError: noop,

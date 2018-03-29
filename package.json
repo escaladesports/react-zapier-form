@@ -1,0 +1,37 @@
+{
+  "name": "react-zapier-form",
+  "version": "0.0.0",
+  "keywords": [
+    "react",
+    "zapier",
+    "form"
+  ],
+  "main": "dist/index.js",
+  "author": "Kennedy Rose <krose@escaladesports.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/escaladesports/react-zapier-form.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "analyze": "esca-scripts analyze --react --component --input ./src/index.js",
+    "build": "esca-scripts build --react --component --babel --input src --output dist --multiple",
+    "dev": "esca-scripts dev ---input './dev/dev.js, ./dev/index.html' --react --browser",
+    "prepublishOnly": "npm run build",
+    "reset": "esca-scripts reset",
+    "test": "echo 'no test'",
+    "travis": "opn https://travis-ci.org/escaladesports/react-zapier-form/branches"
+  },
+  "devDependencies": {
+    "esca-scripts": "^0.14.3",
+    "opn-cli": "^3.1.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  },
+  "dependencies": {
+    "fetch-retry": "^1.2.1",
+    "formdata-polyfill": "^3.0.9",
+    "jquery": "^3.3.1",
+    "styled-jsx": "^2.2.4"
+  }
+}

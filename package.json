@@ -14,13 +14,13 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "esca-scripts build",
-    "bundle": "npm run build && esca-scripts bundle --src src-test/index.html --dist dist-bundle",
+    "build": "esca-scripts build --no-css",
+    "bundle": "npm run build && esca-scripts bundle --src src-test/index.html --dist dist-bundle --no-css",
     "dev": "esca-scripts dev",
     "prepublishOnly": "npm run build",
     "reset": "esca-scripts reset",
     "serve": "esca-scripts serve --src dist-bundle",
-    "test": "npm run bundle && esca-scripts test",
+    "test": "npm run bundle && esca-scripts test --no-css",
     "travis": "opn https://travis-ci.org/escaladesports/react-zapier-form/branches"
   },
   "devDependencies": {

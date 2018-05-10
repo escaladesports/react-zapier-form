@@ -1,4 +1,4 @@
-# React Component Boilerplate
+# react-zapier-form
 
 A React component for creating forms that post to Zapier's API. It posts directly to a [catch hook](https://zapier.com/apps/webhook/integrations), so you don't have to use another third party service to collect data from forms on your website.
 

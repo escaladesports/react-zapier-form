@@ -1,28 +1,25 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Form from '../src/index'
-
-const containerEl = document.createElement('div')
-document.body.appendChild(containerEl)
+import ZapierForm from '../src'
 
 render(
-	<Form action='https://hooks.zapier.com/hooks/catch/2384321/kcli8e/'>
+	<ZapierForm action='https://hooks.zapier.com/hooks/catch/2384321/ao6t1c/'>
 		{({ error, loading, success }) => {
 			return (
 				<div>
-					{error && <div>Error!</div>}
-					{loading && <div>Loading...</div>}
-					{success && <div>Success!</div>}
 					{!success && !loading &&
 						<div>
-							<input type='text' name='Name' placeholder='Name' />
-							<input type='file' name='File' placeholder='Email' />
+							<input type='email' name='Email' placeholder='Email' />
+							<textarea name='Message' placeholder='Your message' />
 							<button>Submit</button>
 						</div>
 					}
+					{loading && <div>Loading...</div>}
+					{error && <div>Something went wrong. Please try again later.</div>}
+					{success && <div>Thank you for contacting us!</div>}
 				</div>
 			)
 		}}
-	</Form>,
-	containerEl
+	</ZapierForm>,
+	document.querySelector(`#container`)
 )

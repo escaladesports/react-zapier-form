@@ -89,7 +89,6 @@ class ZapierForm extends React.Component {
 }
 
 ZapierForm.defaultProps = {
-	name: 'Form',
 	canSubmit: true,
 	honeyPotName: 'p_number',
 	onSubmit: noop,

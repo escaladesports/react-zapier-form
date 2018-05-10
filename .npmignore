@@ -20,7 +20,9 @@ docs/build/
 coverage/
 .eslintcache
 .postcssrc
+.babelrc
 src
+.travis.yml
 
 # Temporary
 temp

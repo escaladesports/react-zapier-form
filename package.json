@@ -20,7 +20,7 @@
     "prepublishOnly": "npm run build",
     "reset": "esca-scripts reset",
     "serve": "esca-scripts serve --src dist-bundle",
-    "test": "npm run bundle && esca-scripts test --no-css",
+    "test": "npm run bundle && ls && esca-scripts test --no-css",
     "travis": "opn https://travis-ci.org/escaladesports/react-zapier-form/branches"
   },
   "devDependencies": {

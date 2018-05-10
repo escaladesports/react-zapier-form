@@ -2218,9 +2218,9 @@ es6-promisify@^5.0.0:
   dependencies:
     es6-promise "^4.0.3"
 
-esca-scripts@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/esca-scripts/-/esca-scripts-1.2.1.tgz#22c93d77f58492321ba91f767d3a553f7140f271"
+esca-scripts@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/esca-scripts/-/esca-scripts-1.2.2.tgz#f5dc9bad08da2af9fbad8a8c78d4fb2ba4423e2a"
   dependencies:
     babel-cli "^6.26.0"
     babel-core "^6.26.0"

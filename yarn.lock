@@ -2219,7 +2219,7 @@ es-to-primitive@^1.1.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.1"
 
-es6-promise@^4.0.3, es6-promise@^4.1.0:
+es6-promise@^4.0.3:
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.4.tgz#dc4221c2b16518760bd8c39a52d8f356fc00ed29"
 
@@ -2464,13 +2464,6 @@ fd-slicer@~1.0.1:
   resolved "https://registry.yarnpkg.com/fd-slicer/-/fd-slicer-1.0.1.tgz#8b5bcbd9ec327c5041bf9ab023fd6750f1177e65"
   dependencies:
     pend "~1.2.0"
-
-fetch-retry@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/fetch-retry/-/fetch-retry-1.2.1.tgz#0cb551d9a2febd89920ed513ebd4144094e3a6d7"
-  dependencies:
-    es6-promise "^4.1.0"
-    isomorphic-fetch "^2.2.1"
 
 file-size@0.0.5:
   version "0.0.5"

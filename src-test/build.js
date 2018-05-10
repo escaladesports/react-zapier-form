@@ -1,9 +1,12 @@
+import ZapierForm from '../dist'
 import React from 'react'
 import { render } from 'react-dom'
-import ZapierForm from '../src'
+
+const el = document.createElement(`div`)
+document.body.appendChild(el)
 
 render(
-	<ZapierForm action='https://hooks.zapier.com/hooks/catch/asdf/asdf/'>
+	<ZapierForm action='https://hooks.zapier.com/hooks/catch/2384321/ao6t1c/'>
 		{({ error, loading, success }) => {
 			return (
 				<main>
@@ -25,5 +28,5 @@ render(
 			)
 		}}
 	</ZapierForm>,
-	document.querySelector(`#container`)
+	el
 )

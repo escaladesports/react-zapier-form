@@ -15,7 +15,7 @@
   "license": "MIT",
   "scripts": {
     "build": "esca-scripts build",
-    "bundle": "esca-scripts bundle --src src/inject.js --dist dist-bundle",
+    "bundle": "npm run build && esca-scripts bundle --src src-test/index.html --dist dist-bundle",
     "dev": "esca-scripts dev",
     "prepublishOnly": "npm run build",
     "reset": "esca-scripts reset",
@@ -35,6 +35,6 @@
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "fetch-retry": "^1.2.1"
+    "isomorphic-fetch": "^2.2.1"
   }
 }

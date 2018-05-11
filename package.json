@@ -24,6 +24,8 @@
     "travis": "opn https://travis-ci.org/escaladesports/react-zapier-form/branches"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^22.4.3",
     "esca-scripts": "^1.2.4",
     "fs-extra": "^6.0.0",
     "get-port": "^3.2.0",
@@ -31,6 +33,7 @@
     "puppeteer": "^1.4.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
+    "regenerator-runtime": "^0.11.1",
     "static-server": "^2.2.1"
   },
   "dependencies": {

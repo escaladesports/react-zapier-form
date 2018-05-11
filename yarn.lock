@@ -528,6 +528,10 @@ babel-messages@^6.23.0:
   dependencies:
     babel-runtime "^6.22.0"
 
+babel-plugin-add-module-exports@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-add-module-exports/-/babel-plugin-add-module-exports-0.2.1.tgz#9ae9a1f4a8dc67f0cdec4f4aeda1e43a5ff65e25"
+
 babel-plugin-check-es2015-constants@^6.22.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-check-es2015-constants/-/babel-plugin-check-es2015-constants-6.22.0.tgz#35157b101426fd2ffd3da3f75c7d1e91835bbf8a"
@@ -2218,13 +2222,14 @@ es6-promisify@^5.0.0:
   dependencies:
     es6-promise "^4.0.3"
 
-esca-scripts@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/esca-scripts/-/esca-scripts-1.2.3.tgz#57015a609b5eb86be31708f93447f535cae5fa03"
+esca-scripts@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/esca-scripts/-/esca-scripts-1.2.4.tgz#859f12e704ce3dab9fc6c11728cf85aa800ff585"
   dependencies:
     babel-cli "^6.26.0"
     babel-core "^6.26.0"
     babel-loader "^7.1.4"
+    babel-plugin-add-module-exports "^0.2.1"
     babel-plugin-dynamic-import-node "^1.2.0"
     babel-plugin-shebang "^0.0.0"
     babel-plugin-syntax-dynamic-import "^6.18.0"

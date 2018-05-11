@@ -20,7 +20,7 @@
     "prepublishOnly": "npm run build",
     "reset": "esca-scripts reset",
     "serve": "esca-scripts serve --src dist-bundle",
-    "test": "npm run bundle && cat .babelrc && jest --no-cache",
+    "test": "npm run bundle && cat .babelrc && jest --no-cache --verbose",
     "travis": "opn https://travis-ci.org/escaladesports/react-zapier-form/branches"
   },
   "devDependencies": {
